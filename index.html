@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Riddhi Joshi</title>
+    <style>
+        body {
+            background-color:thistle;
+        }
+        h1 {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color:purple;
+            font-size: 50px;
+        }
+        input[type=submit] {
+            background-color: purple;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: none;
+            font-size: 15px;
+            margin-top: 10px;
+            padding: 12px;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+<h1>Welcome to the Stock Ticker!</h1>
+<form method='post' action="/process">
+    <input type="radio" id="company" name="choice" value="company">
+        <label for="company">Company Name</label><br>
+    <input type="radio" id="ticker" name="choice" value="ticker">
+        <label for="ticker">Stock Ticker</label><br>
+    <input type='text' name='user_text'><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
